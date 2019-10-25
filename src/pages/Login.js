@@ -29,6 +29,7 @@ export default function Login({ navigation }) {
       enabled={Platform.OS === "ios"}
       style={styles.container}
     >
+      <Text style={styles.tilte}>DevFinder</Text>
       <TextInput
         autoCapitalize="none"
         autoCorrect={false}
@@ -69,7 +70,7 @@ const styles = StyleSheet.create({
   button: {
     height: 46,
     alignSelf: "stretch",
-    backgroundColor: "#DF4723",
+    backgroundColor: "#7800ff",
     borderRadius: 4,
     marginTop: 10,
     justifyContent: "center",
@@ -80,5 +81,11 @@ const styles = StyleSheet.create({
     color: "#FFF",
     fontWeight: "bold",
     fontSize: 16
+  },
+  tilte: {
+    alignSelf: "center",
+    fontSize: 36,
+    fontWeight: "bold",
+    color: "#7800ff"
   }
 });
